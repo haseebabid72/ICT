@@ -23,7 +23,7 @@ function App() {
             <button className="bg-secondary text-secondary-foreground px-6 text-white bg-[#1E1E1E] py-2 rounded">Sign up</button>
           </div>
           <div>
-            <img src="https://pics.craiyon.com/2024-04-22/d25WiRyTTnazlHfrKYp2HA.webp" alt="" />
+            <img src="" alt="hero" />
           </div>
         </main>
 
