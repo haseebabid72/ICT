@@ -9,7 +9,7 @@ import int1 from './assets/interior2.png'
 import int2 from './assets/interior1.png'
 import int3 from './assets/interior3.png'
 import Sarah from './assets/Girl1.png'
-import Michael from './assets/Guy.png'
+import Michael from './assets/guy.png'
 import Emily from './assets/Girl2.png'
 import Guidance from './assets/Guidance.png'
 import Support from './assets/Support.png'
@@ -110,8 +110,11 @@ function App() {
             <img src={san} alt="San Francisco Residence" className="w-full object-cover" />
             <div className="p-4">
               <h3 className="text-lg font-semibold">San Francisco, California</h3>
+              <div className='flex justify-center gap-5'>
+
               <p className="text-muted-foreground">4 Rooms</p>
               <p className="text-muted-foreground">3,500 sq ft</p>
+              </div>
               <p className="text-xl font-bold">$2,500,000</p>
               <button className="mt-4 bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded">Sign up</button>
             </div>
@@ -120,8 +123,11 @@ function App() {
             <img src={baverly} alt="Beverly Hills Residence" className="w-full object-cover" />
             <div className="p-4">
               <h3 className="text-lg font-semibold">Beverly Hills, California</h3>
+              <div className='flex justify-center gap-5'>
+
               <p className="text-muted-foreground">3 Rooms</p>
               <p className="text-muted-foreground">1,500 sq ft</p>
+              </div>
               <p className="text-xl font-bold">$850,000</p>
               <button className="mt-4 bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded">Sign up</button>
             </div>
@@ -130,8 +136,11 @@ function App() {
             <img src={Palo} alt="Palo Alto Residence" className="w-full object-cover" />
             <div className="p-4">
               <h3 className="text-lg font-semibold">Palo Alto, California</h3>
+              <div className='flex justify-center gap-5'>
+
               <p className="text-muted-foreground">6 Rooms</p>
               <p className="text-muted-foreground">4,000 sq ft</p>
+              </div>
               <p className="text-xl font-bold">$3,700,000</p>
               <button className="mt-4 bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded">Sign up</button>
             </div>
