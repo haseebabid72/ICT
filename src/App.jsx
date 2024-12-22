@@ -1,4 +1,17 @@
 import './App.css'
+import hero from './assets/hero.png'
+import logo from './assets/logo.png'
+import dreamhome from './assets/1stimage.png'
+import san from './assets/img1.png'
+import baverly from './assets/img2.png'
+import Palo from './assets/img3.png'
+import int1 from './assets/interior2.png'
+import int2 from './assets/interior1.png'
+import int3 from './assets/interior3.png'
+import Sarah from './assets/Girl1.png'
+import Michael from './assets/Guy.png'
+import Emily from './assets/Girl2.png'
+
 import Footer from './components/Footer'
 
 function App() {
@@ -6,7 +19,7 @@ function App() {
     <>
       <div className="bg-background text-[#1E1E1E] p-8 min-h-screen">
         <header className="flex justify-between items-center mb-8">
-          <div className="text-2xl font-bold">Dwello</div>
+          <div className="text-2xl font-bold"><img src={logo} alt="logo" /></div>
           <nav className="space-x-4">
             <a href="#" className="text-muted-foreground">Home</a>
             <a href="#" className="text-muted-foreground">Service</a>
@@ -23,11 +36,11 @@ function App() {
             <button className="bg-secondary text-secondary-foreground px-6 text-white bg-[#1E1E1E] py-2 rounded">Sign up</button>
           </div>
           <div>
-            <img src="" alt="hero" />
+            <img src={hero} alt="hero" />
           </div>
         </main>
 
-        <div className="flex bg-[#DDC7BB] p-8 justify-center space-x-4 mb-8">
+        {/* <div className="flex bg-[#DDC7BB] p-8 justify-center space-x-4 mb-8">
           <select className="border border-border rounded p-2">
             <option>Location</option>
             <option>City 1</option>
@@ -44,18 +57,18 @@ function App() {
             <option>$200,000 - $300,000</option>
           </select>
           <button className='text-white bg-[#1E1E1E] px-5 py-2 rounded-md'>Search</button>
-        </div>
+        </div> */}
       </div>
       <div className="flex flex-col md:flex-row bg-white dark:bg-[#1E1E1E] rounded-lg shadow-lg overflow-hidden">
         <div className="md:w-1/2">
-          <img src="https://placehold.co/600x400" alt="Dream Home" className="w-full h-full object-cover" />
+          <img src={dreamhome} alt="Dream Home" className="w-full h-full object-cover" />
         </div>
         <div className="md:w-1/2 p-6 flex flex-col justify-center">
           <h2 className="text-2xl font-bold text-zinc-800 dark:text-white">We Help You To Find Your Dream Home</h2>
           <p className="mt-2 text-zinc-600 dark:text-zinc-300">
             From cozy cottages to luxurious estates, our dedicated team guides you through every step of the journey, ensuring your dream home becomes a reality.
           </p>
-          <div className="mt-4 flex space-x-8">
+          <div className="mt-4 flex justify-center space-x-8">
             <div className="text-center">
               <span className="text-3xl font-bold text-zinc-800 dark:text-white">8K+</span>
               <p className="text-zinc-600 dark:text-zinc-300">Houses Available</p>
@@ -109,7 +122,7 @@ function App() {
         <h2 className="text-2xl font-bold text-center mb-6">Our Popular Residences</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-card rounded-lg shadow-lg overflow-hidden">
-            <img src="https://placehold.co/300x200" alt="San Francisco Residence" className="w-full h-48 object-cover" />
+            <img src={san} alt="San Francisco Residence" className="w-full h-48 object-cover" />
             <div className="p-4">
               <h3 className="text-lg font-semibold">San Francisco, California</h3>
               <p className="text-muted-foreground">4 Rooms</p>
@@ -119,7 +132,7 @@ function App() {
             </div>
           </div>
           <div className="bg-card rounded-lg shadow-lg overflow-hidden">
-            <img src="https://placehold.co/300x200" alt="Beverly Hills Residence" className="w-full h-48 object-cover" />
+            <img src={baverly} alt="Beverly Hills Residence" className="w-full h-48 object-cover" />
             <div className="p-4">
               <h3 className="text-lg font-semibold">Beverly Hills, California</h3>
               <p className="text-muted-foreground">3 Rooms</p>
@@ -129,7 +142,7 @@ function App() {
             </div>
           </div>
           <div className="bg-card rounded-lg shadow-lg overflow-hidden">
-            <img src="https://placehold.co/300x200" alt="Palo Alto Residence" className="w-full h-48 object-cover" />
+            <img src={Palo} alt="Palo Alto Residence" className="w-full h-48 object-cover" />
             <div className="p-4">
               <h3 className="text-lg font-semibold">Palo Alto, California</h3>
               <p className="text-muted-foreground">6 Rooms</p>
@@ -144,40 +157,55 @@ function App() {
         <h2 className="text-3xl font-bold text-center mb-6">What People Say About Dwello</h2>
         <div className="flex justify-center space-x-4">
           <div className="bg-white rounded-lg shadow-lg p-4 max-w-xs">
-            <img src="https://placehold.co/300x200" alt="Room" className="rounded-lg mb-4" />
-            <h3 className="font-semibold">Sarah Nguyen</h3>
-            <p className="text-sm text-zinc-500">San Francisco</p>
-            <p className="text-lg font-bold">5.0</p>
+            <img src={int1} alt="Room" className="rounded-lg mb-4" />
+            <div className='flex justify-between items-center pl-5 pr-5'>
+              <img src={Sarah} alt="person1" className='rounded-full' />
+              <div>
+              <h3 className="font-semibold">Sarah Nguyen</h3>
+              <p className="text-sm text-zinc-500">San Francisco</p>
+              </div>
+              <p className="text-lg font-bold">4.5</p>
+            </div>
             <p className="text-zinc-700 mt-2">
               Dwello truly cares about their clients. They listened to my needs and preferences and helped me find the perfect home in the Bay Area. Their professionalism and attention to detail are
               unmatched.
             </p>
           </div>
           <div className="bg-white rounded-lg shadow-lg p-4 max-w-xs">
-            <img src="https://placehold.co/300x200" alt="Room" className="rounded-lg mb-4" />
-            <h3 className="font-semibold">Michael Rodriguez</h3>
-            <p className="text-sm text-zinc-500">San Diego</p>
-            <p className="text-lg font-bold">4.5</p>
+            <img src={int2} alt="Room" className="rounded-lg mb-4" />
+            <div className='flex justify-between items-center pl-5 pr-5'>
+              <img src={Michael} alt="person2" className='rounded-full' />
+              <div>
+              <h3 className="font-semibold">Michael Rodriguez</h3>
+              <p className="text-sm text-zinc-500">San Diego</p>
+              </div>
+              <p className="text-lg font-bold">4.5</p>
+            </div>
             <p className="text-zinc-700 mt-2">
               I had a fantastic experience working with Dwello. Their expertise and personalized service exceeded my expectations. I found my dream home quickly and smoothly. Highly recommended!
             </p>
           </div>
           <div className="bg-white rounded-lg shadow-lg p-4 max-w-xs">
-            <img src="https://placehold.co/300x200" alt="Room" className="rounded-lg mb-4" />
-            <h3 className="font-semibold">Emily Johnson</h3>
-            <p className="text-sm text-zinc-500">Los Angeles</p>
-            <p className="text-lg font-bold">5.0</p>
+            <img src={int3} alt="Room" className="rounded-lg mb-4" />
+            <div className='flex justify-between items-center pl-5 pr-5'>
+              <img src={Emily} alt="person3" className='rounded-full' />
+              <div>
+              <h3 className="font-semibold">Emily Johnson</h3>
+              <p className="text-sm text-zinc-500">Los Angeles</p>  
+              </div>
+              <p className="text-lg font-bold">5.0</p>
+            </div>
             <p className="text-zinc-700 mt-2">
               Dwello made my dream of owning a home a reality! Their team provided exceptional support and guided me through every step of the process. I could not be happier with my new home!
             </p>
           </div>
         </div>
-        <div className="flex justify-center mt-6">
+        {/* <div className="flex justify-center mt-6">
           <button className="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded-full mx-2">←</button>
           <button className="bg-secondary text-secondary-foreground hover:bg-secondary/80 p-2 rounded-full mx-2">→</button>
-        </div>
+        </div> */}
       </div>
-      <div className="text-center py-10">
+      {/* <div className="text-center py-10">
         <h2 className="text-2xl font-bold text-foreground">Do You Have Any Questions?</h2>
         <p className="text-lg text-muted-foreground">Get Help From Us</p>
         <div className="flex flex-col md:flex-row justify-center items-center mt-4 space-x-0 md:space-x-4">
@@ -188,7 +216,7 @@ function App() {
           <input type="email" placeholder="Enter your email address..." className="border border-border rounded-lg p-2 w-full md:w-1/3" />
           <button className="bg-secondary text-white hover:bg-secondary/80 rounded-lg bg-[#1E1E1E] px-4 py-2 ml-2">Submit</button>
         </div>
-      </div>
+      </div> */}
       <Footer/>
     </>
   )
