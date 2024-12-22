@@ -16,8 +16,14 @@ import Support from './assets/Support.png'
 import process from './assets/process.png'
 import personalized from './assets/personalized.png'
 import Footer from './components/Footer'
-
+import { useState } from 'react'
+import Login from './components/login'
 function App() {
+  const [seen, setSeen] = useState(false)
+
+    function togglePop () {
+        setSeen(!seen);
+    };
   return (
     <>
       <div className="bg-background text-[#1E1E1E] p-8 min-h-screen">
@@ -25,9 +31,10 @@ function App() {
           <div className="text-2xl font-bold"><img src={logo} alt="logo" /></div>
           <nav className="space-x-4">
             <a href="#" className="text-muted-foreground">Home</a>
-            <a href="#" className="text-muted-foreground">Service</a>
-            <a href="#" className="text-muted-foreground">Contact</a>
-            <a href="#" className="text-secondary-foreground px-4 py-2 text-white bg-[#1E1E1E] rounded">Sign up</a>
+            <a href="#1" className="text-muted-foreground">Service</a>
+            <a href="#3" className="text-muted-foreground">Contact</a>
+            <a onClick={togglePop} className="text-secondary-foreground px-4 py-2 text-white bg-[#1E1E1E] rounded">Sign up</a>
+            {seen ? <Login toggle={togglePop} /> : null}
           </nav>
         </header>
 
@@ -42,7 +49,7 @@ function App() {
           </div>
         </main>
       </div>
-      <div className="flex flex-col md:flex-row bg-white dark:bg-[#ffffff] rounded-lg shadow-lg overflow-hidden">
+      <div id='1' className="flex flex-col md:flex-row bg-white dark:bg-[#ffffff] rounded-lg shadow-lg overflow-hidden">
         <div className="md:w-1/2">
           <img src={dreamhome} alt="Dream Home" className="w-full h-full object-cover" />
         </div>
@@ -192,7 +199,9 @@ function App() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <div id='3'>
+        <Footer/>
+      </div>
     </>
   )
 }
