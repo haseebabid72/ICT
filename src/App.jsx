@@ -122,7 +122,7 @@ function App() {
         <h2 className="text-2xl font-bold text-center mb-6">Our Popular Residences</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-card rounded-lg shadow-lg overflow-hidden">
-            <img src={san} alt="San Francisco Residence" className="w-full h-48 object-cover" />
+            <img src={san} alt="San Francisco Residence" className="w-full h-5 object-cover" />
             <div className="p-4">
               <h3 className="text-lg font-semibold">San Francisco, California</h3>
               <p className="text-muted-foreground">4 Rooms</p>
