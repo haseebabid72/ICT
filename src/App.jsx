@@ -152,7 +152,7 @@ function App() {
       </div>
       <div className="bg-[#FEF7F2] p-8">
         <h2 className="text-3xl font-bold text-center mb-6">What People Say About Dwello</h2>
-        <div className="flex justify-center space-x-4 max-sm:block space-x-0">
+        <div className="flex justify-center space-x-4 max-sm:block mx-sm:space-x-0">
           <div className="bg-[#DDC7BB] rounded-lg shadow-lg p-4 max-w-xs max-sm:mb-5">
             <img src={int1} alt="Room" className="rounded-lg mb-4" />
             <div className='flex justify-between items-center pl-5 pr-5'>
