@@ -13,7 +13,7 @@ import Michael from './assets/guy.png'
 import Emily from './assets/Girl2.png'
 import Guidance from './assets/Guidance.png'
 import Support from './assets/Support.png'
-import process from './assets/Process.png'
+import process from './assets/process.png'
 import personalized from './assets/personalized.png'
 
 
