@@ -42,7 +42,8 @@ function App() {
           <div>
             <h1 className="text-4xl font-bold mb-4">Find Your Dream Home</h1>
             <p className="text-muted-foreground mb-8">Explore our curated selection of exquisite properties meticulously tailored to your unique dream home vision</p>
-            <button className="bg-secondary text-secondary-foreground px-6 text-white bg-[#1E1E1E] py-2 rounded">Sign up</button>
+            <button onClick={togglePop} className="bg-secondary text-secondary-foreground px-6 text-white bg-[#1E1E1E] py-2 rounded">Sign up</button>
+            {seen ? <Login toggle={togglePop} /> : null}
           </div>
           <div>
             <img src={hero} alt="hero" />
@@ -121,7 +122,6 @@ function App() {
               <p className="text-muted-foreground">3,500 sq ft</p>
               </div>
               <p className="text-xl font-bold">$2,500,000</p>
-              <button className="mt-4 bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded">Sign up</button>
             </div>
           </div>
           <div className="bg-card bg-[#DDC7BB] rounded-lg shadow-lg overflow-hidden">
@@ -134,7 +134,6 @@ function App() {
               <p className="text-muted-foreground">1,500 sq ft</p>
               </div>
               <p className="text-xl font-bold">$850,000</p>
-              <button className="mt-4 bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded">Sign up</button>
             </div>
           </div>
           <div className="bg-card bg-[#DDC7BB] rounded-lg shadow-lg overflow-hidden">
@@ -147,7 +146,6 @@ function App() {
               <p className="text-muted-foreground">4,000 sq ft</p>
               </div>
               <p className="text-xl font-bold">$3,700,000</p>
-              <button className="mt-4 bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded">Sign up</button>
             </div>
           </div>
         </div>
