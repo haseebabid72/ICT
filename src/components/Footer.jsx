@@ -5,7 +5,7 @@ const Footer = () => {
             <div className="p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
-                        <a href="https://flowbite.com/" className="flex items-center">
+                        <a href="#" className="flex items-center">
                             <img src={logo} className="ml-2 me-3" alt="Logo" />
                         </a>
                     </div>
@@ -36,10 +36,10 @@ const Footer = () => {
                             <h2 className="mb-6 text-sm font-semibold uppercase" style={{ color: '#1E1E1E' }}>Legal</h2>
                             <ul className="font-medium" style={{ color: '#1E1E1E' }}>
                                 <li className="mb-4">
-                                    <a href="#" className="hover:underline">Privacy Policy</a>
+                                    <a href="" className="hover:underline">Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="hover:underline">Terms &amp; Conditions</a>
+                                    <a href="" className="hover:underline">Terms &amp; Conditions</a>
                                 </li>
                             </ul>
                         </div>

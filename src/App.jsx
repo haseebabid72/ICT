@@ -15,8 +15,6 @@ import Guidance from './assets/Guidance.png'
 import Support from './assets/Support.png'
 import process from './assets/process.png'
 import personalized from './assets/personalized.png'
-
-
 import Footer from './components/Footer'
 
 function App() {
@@ -161,8 +159,7 @@ function App() {
               <p className="text-lg font-bold">4.5</p>
             </div>
             <p className="text-zinc-700 mt-2">
-              Dwello truly cares about their clients. They listened to my needs and preferences and helped me find the perfect home in the Bay Area. Their professionalism and attention to detail are
-              unmatched.
+              Dwello truly cares about their clients. They listened to my needs and preferences and helped me find the perfect home in the Bay Area. Their professionalism and attention to detail are unmatched.
             </p>
           </div>
           <div className="bg-[#DDC7BB] rounded-lg shadow-lg p-4 max-w-xs">
