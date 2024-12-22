@@ -30,15 +30,15 @@ function App() {
         <header className="flex justify-between items-center mb-8">
           <div className="text-2xl font-bold"><img src={logo} alt="logo" /></div>
           <nav className="space-x-4">
-            <a href="#" className="text-muted-foreground">Home</a>
-            <a href="#1" className="text-muted-foreground">Service</a>
-            <a href="#3" className="text-muted-foreground">Contact</a>
+            <a href="#" className="text-muted-foreground max-sm:hidden">Home</a>
+            <a href="#1" className="text-muted-foreground max-sm:hidden">Service</a>
+            <a href="#3" className="text-muted-foreground max-sm:hidden">Contact</a>
             <a onClick={togglePop} className="text-secondary-foreground px-4 py-2 text-white bg-[#1E1E1E] rounded">Sign up</a>
             {seen ? <Login toggle={togglePop} /> : null}
           </nav>
         </header>
 
-        <main className="text-center justify-center items-center flex mb-12">
+        <main className="text-center justify-center items-center flex mb-12 max-sm:block">
           <div>
             <h1 className="text-4xl font-bold mb-4">Find Your Dream Home</h1>
             <p className="text-muted-foreground mb-8">Explore our curated selection of exquisite properties meticulously tailored to your unique dream home vision</p>
@@ -152,8 +152,8 @@ function App() {
       </div>
       <div className="bg-[#FEF7F2] p-8">
         <h2 className="text-3xl font-bold text-center mb-6">What People Say About Dwello</h2>
-        <div className="flex justify-center space-x-4">
-          <div className="bg-[#DDC7BB] rounded-lg shadow-lg p-4 max-w-xs">
+        <div className="flex justify-center space-x-4 max-sm:block space-x-0">
+          <div className="bg-[#DDC7BB] rounded-lg shadow-lg p-4 max-w-xs max-sm:mb-5">
             <img src={int1} alt="Room" className="rounded-lg mb-4" />
             <div className='flex justify-between items-center pl-5 pr-5'>
               <img src={Sarah} alt="person1" className='rounded-full' />
@@ -167,7 +167,7 @@ function App() {
               Dwello truly cares about their clients. They listened to my needs and preferences and helped me find the perfect home in the Bay Area. Their professionalism and attention to detail are unmatched.
             </p>
           </div>
-          <div className="bg-[#DDC7BB] rounded-lg shadow-lg p-4 max-w-xs">
+          <div className="bg-[#DDC7BB] rounded-lg shadow-lg p-4 max-w-xs max-sm:mb-5">
             <img src={int2} alt="Room" className="rounded-lg mb-4" />
             <div className='flex justify-between items-center pl-5 pr-5'>
               <img src={Michael} alt="person2" className='rounded-full' />
@@ -181,7 +181,7 @@ function App() {
               I had a fantastic experience working with Dwello. Their expertise and personalized service exceeded my expectations. I found my dream home quickly and smoothly. Highly recommended!
             </p>
           </div>
-          <div className="bg-[#DDC7BB] rounded-lg shadow-lg p-4 max-w-xs">
+          <div className="bg-[#DDC7BB] rounded-lg shadow-lg p-4 max-w-xs max-sm:mb-5">
             <img src={int3} alt="Room" className="rounded-lg mb-4" />
             <div className='flex justify-between items-center pl-5 pr-5'>
               <img src={Emily} alt="person3" className='rounded-full' />
